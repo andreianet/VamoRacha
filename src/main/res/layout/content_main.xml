@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorCinzaClaro"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.drcarlos.teste.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/txtConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor da Conta:"
+            android:textColor="#060606" />
+
+        <EditText
+            android:id="@+id/edtValorConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtConta"
+            android:layout_alignRight="@+id/edtRacha"
+            android:layout_alignEnd="@+id/edtRacha" />
+
+
+    <TextView
+        android:id="@+id/txtRacha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Racha em:"
+        android:layout_below="@+id/edtValorConta"
+        android:textColor="#070707"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtRacha"
+        android:layout_alignTop="@id/txtRacha"
+        android:id="@+id/edtRacha" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalcular"
+        android:text="Calcular o Racha"
+        android:layout_below="@+id/edtRacha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edtRacha"
+        android:layout_alignEnd="@+id/edtRacha" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLimpar"
+        android:text="Limpa o Racha"
+        android:layout_below="@+id/btnCalcular"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnCalcular"
+        android:layout_alignEnd="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total do Racha:"
+        android:textColor="#070707"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTotal"
+        android:layout_alignTop="@+id/txtTotal"
+        android:layout_toRightOf="@+id/txtTotal"
+        android:layout_toEndOf="@+id/txtTotal" />
+    </RelativeLayout>
+
+
+
